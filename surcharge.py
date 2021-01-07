@@ -6,7 +6,7 @@ class Point:
 
     def ToString(self):
         if self.z:
-        print('P({:.2f} , {:.2f} , {:.2f})'.format(self.x, self.y, self.z))
+            print('P({:.2f} , {:.2f} , {:.2f})'.format(self.x, self.y, self.z))
         else:
             print('P({:.2f} , {:.2f})'.format(self.x, self.y))
 
