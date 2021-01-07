@@ -7,10 +7,10 @@ class Courrier:
         self.expMode = expMode
 
     def ToString(self):
-        print("Adresse destination: {}".format(self.adrDest))
-        print("Adresse expédition: {}".format(self.adrExp))
-        print("Poids: {} grammes".format(self.poids))
-        print("Mode: {}".format(self.expMode))
+        print(f"Adresse destination: {self.adrDest}")
+        print(f"Adresse expédition: {self.adrExp}")
+        print(f"Poids: {self.poids} grammes")
+        print(f"Mode: {self.expMode}")
 
 
 class Colis(Courrier):
@@ -23,12 +23,11 @@ class Colis(Courrier):
         if self.expMode == "normal":
             return (0.25 * self.volume) * (self.poids/1000)
         elif self.expMode == "expresse":
-            return (0.25 * self.volume) * (self.poids/1000) * 2.0
+            return (25 * self.volume) * (self.poids/1000) * 20
 
     def ToString(self):
         print("Colis: ")
         super().ToString()
-
         print("Volume: {} litres".format(self.volume))
         print("Prix du timbre: {}".format(self.calculTimbre()))
 
