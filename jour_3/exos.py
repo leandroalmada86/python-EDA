@@ -1,3 +1,7 @@
+#  Visualisation d’un nuage de points et exploration des variables Pour cette partie, nous allons
+#  utiliser le dataset suivante : house_pricing.csv que vous pouvez trouver dans le dossier Data Sources.
+#  Nous allons tenter de comprendre un peu mieux ce dataset par la visualisation
+
 # 1)Importez les librairies qu’il nous faut (pandas, seaborn, matplotlib, numpy)
 import pandas as pd 
 import numpy as np 
